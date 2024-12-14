@@ -1,0 +1,104 @@
+html{
+  font-size: 62.5%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(192, 192, 192);
+  background-image: url(content/escudocorinthiasBG.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s, visibility 0.5s;
+  opacity: 1;
+  visibility: visible;
+  h1{
+    font-size: 2.8rem;
+    font-weight: 800;
+  }
+}
+
+.overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  background-color: #CC2031;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #cc3040;
+}
+
+
+.content {
+  padding: 20px;
+}
+
+.tituloParabens{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img{
+    max-width: 700px;
+    width: 80%;
+  }
+}
+
+.image {
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 6s ease-in; /* Suaviza a transição */
+}
+
+/* Quando a imagem for exibida, opacidade completa */
+.image.visible {
+  opacity: 1;
+}
+
+.second, .third, .fourth, .fifth, .sixth, .seventh{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3rem;
+  text-align: center;
+  img{
+    max-width: 700px;
+    width: 80%;
+  }
+
+
+}
