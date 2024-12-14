@@ -79,7 +79,7 @@ button:hover {
 
 .image {
   opacity: 0; /* Inicialmente invisível */
-  transition: opacity 6s ease-in; /* Suaviza a transição */
+  transition: opacity 4s ease-in; /* Suaviza a transição */
 }
 
 /* Quando a imagem for exibida, opacidade completa */
